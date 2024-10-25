@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Useless Keyboard",
+    "version": "1.0",
+    "description": "A useless on-screen keyboard that only works with an external keyboard and ignores mouse clicks.",
+    "icons": {
+      "48": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["script.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }

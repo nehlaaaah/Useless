@@ -1,0 +1,33 @@
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .key {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    cursor: not-allowed; /* Show that mouse clicks are useless */
+  }
+  
+  .key.pressed {
+    background-color: #f00; /* Highlight key when pressed */
+  }
+  
+  input {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  
